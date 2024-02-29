@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    
+}
+
+#msgError{
+    text-align:center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+#msgSuccess{
+    text-align:center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card{
+    background: #9494949c;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #b4b4b46e;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fffffe;
+}
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid #f8f8f8;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .5s ease-out;
+    border-radius: 0;
+}
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5px;
+    margin-bottom: 5%;
+}
+.label-float input:focus{
+    border-bottom: 1px solid #fafd2c; 
+
+}
+
+.label-float label{
+    color: #ffffff;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .5s ease-out;
+}
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #4038a0
+}
+
+button{
+    background: #00000052;
+    border-color: #999999;
+    color: #ffffff;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+button:hover{
+    background-color: #58585852;
+    color: rgb(218, 215, 43);
+
+}
+justify-center{
+    display: flex;
+    justify-content: center;
+
+}
